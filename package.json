@@ -1,0 +1,23 @@
+{
+  "name": "html5-web-scaner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "keywords": [
+    "vite",
+    "html5",
+    "camera video",
+    "二维码",
+    "扫一扫"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "vite": "^2.4.2",
+    "@zxing/library": "^0.18.6"
+  }
+}

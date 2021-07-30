@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="app">
+      <div id="result"></div>
+      <button id="clickme">clickme</button>
+      <button id="reset">reset</button>
+      <div class="video_block" id="videowrapper">
+        <video id="video" width="200" height="200" />
+      </div>
+      
+    </div>
+    <script type="module" src="./main.js"></script>
+    <style>
+      .video_block {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        display: none;
+      }
+      .video_block::before {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: url('./scan.gif');
+        z-index: 999;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-size: 100% 100%;
+      }
+    </style>
+  </body>
+</html>

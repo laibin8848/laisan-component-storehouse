@@ -1,10 +1,10 @@
 import vueScaner from './vue-scaner.vue'
 
 const install = function(Vue) {
-    Vue.components(vueScaner.name, vueScaner)
+    Vue.component(vueScaner.name, vueScaner)
 }
 
-export {
+export default {
     install,
     vueScaner
 }

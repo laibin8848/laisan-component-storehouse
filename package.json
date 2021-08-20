@@ -1,7 +1,7 @@
 {
-  "name": "scaner-new",
+  "name": "laisan-vue-scaner",
   "version": "0.1.0",
-  "private": true,
+  "main": "lib/laisan-vue-scaner.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

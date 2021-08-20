@@ -1,7 +1,7 @@
 <template>
   <div class="__scaner">
     <div class="__scaner_layer">
-      <img src="@/assets/scan_bg.gif" width="200" />
+      <img src="../assets/scan_bg.gif" width="200" />
     </div>
     <video id="video" class="video" />
   </div>

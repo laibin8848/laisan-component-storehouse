@@ -1,11 +1,29 @@
-# scaner-new
+# vueplugin
 
 ## Project setup
 ```
-npm install
+yarn install
 ```
 
-### use
+### Compiles and hot-reloads for development
 ```
-<vue-scaner v-model="scanRes" @scan-done="" style="width: 100%;height: 100vh;" />
+yarn serve
 ```
+
+### Compiles and minifies for production
+```
+yarn build
+```
+
+### Run your unit tests
+```
+yarn test:unit
+```
+
+### Lints and fixes files
+```
+yarn lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -1,6 +1,7 @@
 import vue from 'rollup-plugin-vue'
 import css from 'rollup-plugin-css-only'
 import typescript from 'rollup-plugin-typescript2'
+import image from '@rollup/plugin-image'
 import { nodeResolve } from '@rollup/plugin-node-resolve'
 import { name } from '../package.json'
 
@@ -21,7 +22,8 @@ export default {
     nodeResolve(),
     typescript({ tsconfigOverride: overrides }),
     vue(),
-    css({ output: 'bundle.css' })
+    css({ output: 'bundle.css' }),
+    image()
   ],
   external: ['vue', 'lodash-es']
 }

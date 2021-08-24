@@ -8,7 +8,7 @@ const components = [
 ] 
 const install = (app: App)=> {
     components.forEach(component => {
-      app.component(component.name, component)
+      app.component('ls-' + component.name, component)
     })
   }
 export {

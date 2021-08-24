@@ -7,16 +7,21 @@ npm install laisan-component-storehouse -S
 
 组件引入方式
 1，全局引入
-在main.js添加如下代码即可
+1.1，在main.js添加如下代码组件全局组件
 import lsComponents from 'laisan-component-storehouse';
+import 'laisan-component-storehouse/dist/bundle.css';
 app.use(lsComponents);
+
+1.2，使用组件
+<ls-qr-code-scaner v-show="!scanDone" ref="scanerRef" v-model="scanRes" style="width: 100%;height: 100vh;" />
 
 2，局部引入及使用方式
 <template>
-<ls-qr-code-scaner v-show="!scanDone" ref="scanerRef" v-model="scanRes" style="width: 100%;height: 100vh;" />
+<qr-code-scaner v-show="!scanDone" ref="scanerRef" v-model="scanRes" style="width: 100%;height: 100vh;" />
 </template>
 <script>
 import { QrCodeScaner } from 'laisan-component-storehouse';
+import 'laisan-component-storehouse/dist/bundle.css';
 
 export default defineComponent({
   name: 'demo',
@@ -63,14 +68,15 @@ export default defineComponent({
 
 ```
 
-## VUE3，二维码扫描组件，使用方法
+## vue3，qrcode scaner，二维码扫描组件。使用方法
 
 ```
 <template>
-<ls-qr-code-scaner v-show="!scanDone" ref="scanerRef" v-model="scanRes" style="width: 100%;height: 100vh;" />
+<qr-code-scaner v-show="!scanDone" ref="scanerRef" v-model="scanRes" style="width: 100%;height: 100vh;" />
 </template>
 <script>
 import { QrCodeScaner } from 'laisan-component-storehouse';
+import 'laisan-component-storehouse/dist/bundle.css';
 
 export default defineComponent({
   name: 'demo',
